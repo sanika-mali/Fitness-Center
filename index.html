@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanika Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:ital,wght@1,300&family=Noto+Serif&family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body{
+        font-family: 'Playfair Display', serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('bg3.jpg');
+        background-size: cover;
+    }
+
+    .left{
+        display: inline-block;
+        /* border:2px solid red; */
+        position: absolute;
+        left: 30px;
+        top: 20px;
+        text-align: center;
+    }
+
+    .left img{
+        width: 118px;
+    }
+
+    .left div{
+        line-height: 47px;
+        font-size: 27px;
+    }
+
+    .mid{
+        /* border:2px solid green; */
+        display: flex;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .navbar{
+        display: flex;
+        list-style: none;
+    }
+
+    .navbar li{
+        font-size: 20px;
+    }
+
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+        
+    }
+
+    .navbar li a:hover{
+        text-decoration: underline;
+        font-weight: bolder;
+        color: rgb(181, 131, 131);
+    }
+
+    .right{
+        display: flex;
+        /* border:2px solid yellow; */
+        position: absolute;
+        right: 40px;
+        top: 30px;
+    }
+
+    .btn{
+        font-family: 'Playfair Display', serif;
+        padding: 4px 14px;
+        margin: 0 12px;
+        color: white;
+        background-color: black;
+        border: 3px solid gray;
+        border-radius: 9px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: gray;
+    }
+
+    .container{
+        /* border: 2px solid white; */
+        margin: 177px 100px;
+        padding: 71px 80px;
+        width: 34%;
+        border-radius: 35px;
+    }
+
+    .form-group input{
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        display: flex;
+        width: 400px;
+        padding: 6px;
+        border: 4px solid black;
+        margin: 4px auto;
+        font-size: 17px;
+        border-radius: 17px;
+    }
+
+    .container button{
+        display: block;
+        width: 23%;
+        margin: 9px auto;
+        text-align: center;
+    }
+</style>
+<body>
+   <header class="header">
+    <!-- left box foe logo -->
+    <div class="left">
+        <img src="logo.png" alt="">
+        <div>Sanika's Fitness</div>
+    </div>
+    <!-- mid box foe navbar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- right box for buttens -->
+    <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">E-mail Us</button>
+    </div>
+   </header>
+
+   <div class="container">
+        <h1>Join The Best gym of Pune Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+   </div>
+
+</body>
+</html>
